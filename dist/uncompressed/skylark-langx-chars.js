@@ -86,28 +86,6 @@
 
 })(function(define,require) {
 
-define('skylark-langx-chars/chars',[
-    "skylark-langx-ns",
-    "skylark-langx-types"
-],function(skylark,types){
-
-    function isWhiteSpace(ch) {
-        return ch === 32 || ch === 9 || ch === 13 || ch === 10;
-    }
-
-    return skylark.attach("langx.chars",{
-        isWhiteSpace
-    });
-
-
-});
-define('skylark-langx-chars/main',[
-	"./chars"
-],function(chars){
-	return chars;
-});
-define('skylark-langx-chars', ['skylark-langx-chars/main'], function (main) { return main; });
-
 
 },this);
 //# sourceMappingURL=sourcemaps/skylark-langx-chars.js.map
